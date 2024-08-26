@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+#zoo-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    justify-content: space-around;
+}
+
+svg {
+    width: 150px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.icon {
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    z-index: 2;
+}
+
+.forest {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.forest path {
+    transition: 0.3s ease-in-out;
+}
+
+
+.ecureuil {
+    top: 350px;
+    left: 130px;
+    height: 60px;
+    width: auto;
+}
+
+.singe {
+    height: 90px;
+    width: auto;
+    right: 90px;
+    top: 20px;
+}
+
+.chameleon {
+    height: 60px;
+    width: auto;
+    right: 125px;
+    top: 150px;
+}
+
+.chauves-souris {
+    height: 70px;
+    width: auto;
+    left: 190px;
+    top: 40px;
+}
+
+.souris{
+    top: 365px;
+    right: 270px;
+    height: 60px;
+    width: auto;
+    animation: souris 3s linear infinite;
+}
+
+.papillon{
+    top: 140px;
+    right: 365px;
+    height: 50px;
+    width: auto;
+    animation: papillon 4s linear infinite;
+}
+
+.kangourou {
+    height: 150px;
+    right: 400px;
+    top: 280px;
+    width: auto;
+}
+
+.girafe {
+    top: 190px;
+    left: 220px;
+    height: 250px;
+    width: auto;
+}
+
+.elephant {
+    height: 250px;
+    right: 00px;
+    top: 280px;
+    width: auto;
+}
+
+.crocodile {
+    height: 175px;
+    width: auto;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.panda {
+    top: 390px;
+    right: 220px;
+    height: 150px;
+    width: auto;
+}
+
+.lion {
+    top: 353px;
+    left: -10px;
+    height: 130px;
+    width: auto;
+}
+
+@keyframes papillon {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(-100%, 0);
+    }
+    
+    50% {
+        transform: translate(-100%, -100%);
+    }
+    
+    75% {
+        transform: translate(0%, -100%);
+    }
+    
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+@keyframes souris {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    
+    25% {
+        transform: translate(-100%, 0);
+    }
+
+    
+    75% {
+        transform: translate(100%, 0);
+    }
+    
+    
+    100% {
+        transform: translate(0, 0);
+    }
+}
