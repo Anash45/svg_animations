@@ -49,8 +49,8 @@ svg {
 
 
 .ecureuil {
-    top: 350px;
-    left: 130px;
+    bottom: 30px;
+    left: 50%;
     height: 60px;
     width: auto;
 }
@@ -58,27 +58,27 @@ svg {
 .singe {
     height: 90px;
     width: auto;
-    right: 90px;
-    top: 20px;
+    right: 120px;
+    bottom: 580px;
 }
 
 .chameleon {
     height: 60px;
     width: auto;
-    right: 125px;
-    top: 150px;
+    right: 200px;
+    bottom: 450px;
 }
 
 .chauves-souris {
-    height: 70px;
+    height: 90px;
     width: auto;
     left: 190px;
     top: 40px;
 }
 
 .souris{
-    top: 365px;
-    right: 270px;
+    bottom: 245px;
+    right: calc(50% - 80px);
     height: 60px;
     width: auto;
     animation: souris 3s linear infinite;
@@ -93,45 +93,45 @@ svg {
 }
 
 .kangourou {
-    height: 150px;
+    height: 210px;
     right: 400px;
-    top: 280px;
+    bottom: 180px;
     width: auto;
 }
 
 .girafe {
-    top: 190px;
+    bottom: 200px;
     left: 220px;
-    height: 250px;
+    height: 300px;
     width: auto;
 }
 
 .elephant {
-    height: 250px;
+    height: 300px;
     right: 00px;
-    top: 280px;
+    bottom: 160px;
     width: auto;
 }
 
 .crocodile {
-    height: 175px;
+    height: 225px;
     width: auto;
-    top: 400px;
+    bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .panda {
-    top: 390px;
+    bottom: 90px;
     right: 220px;
-    height: 150px;
+    height: 180px;
     width: auto;
 }
 
 .lion {
-    top: 353px;
+    bottom: 150px;
     left: -10px;
-    height: 130px;
+    height: 200px;
     width: auto;
 }
 
