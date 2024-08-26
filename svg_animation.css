@@ -4,6 +4,8 @@
 
 body {
     overflow: hidden;
+    background-size: cover;
+    background-position: center bottom;
 }
 
 #zoo-container {
@@ -13,7 +15,6 @@ body {
     height: 100vh;
     position: relative;
     margin: 0 auto;
-    width: 1000px;
     justify-content: space-around;
 }
 
@@ -32,12 +33,13 @@ svg {
 }
 
 .forest {
+    background-color: green;
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 0;
     z-index: 1;
     margin: 0;
-    height: 632px;
+    /* height: 632px; */
     width: 100%;
 }
 

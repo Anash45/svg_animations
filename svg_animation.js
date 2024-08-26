@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
         { name: 'Girafe', file: 'Girafe.svg' },
         { name: 'Singe', file: 'Singe.svg' },
         { name: 'Chameleon', file: 'Chameleon.svg' },
-        { name: 'Forest', file: 'Forest.svg' },
         { name: 'Lion', file: 'Lion.svg' },
         { name: 'Panda', file: 'Panda.svg' },
         { name: 'Crocodile', file: 'Crocodile.svg' },
@@ -74,11 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
                             resetAnimalColor(svgElement);
                         });
                     }
-
-                    // // Animation spécifique pour Papillon
-                    // if (animal.name === 'Papillon') {
-                    //     animatePapillon(animal.name.toLowerCase());
-                    // }
 
                     if (animal.name === 'Forest') {
                         svgElement.addEventListener('click', function () {
@@ -129,15 +123,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 2000);
     }
 
-    function toggleDayNight() {
-        let forest = document.querySelector('.forest');
-        let sky = document.querySelector('g[clip-path="url(#clip-13)"] path');
-        console.log(sky);
+    function toggleDayNight(event) {
+        console.log(isNight);
+        let forest = document.querySelector('body');
         if (isNight) {
-            sky.setAttribute('fill', 'url(#linear-pattern-2)');
+            forest.style.backgroundImage = "url(Forest.svg)";
             isNight = false;
         } else {
-            sky.setAttribute('fill', '#1c1c1c');
+            forest.style.backgroundImage = "url(Forest-night.svg)";
             isNight = true;
         }
     }
@@ -192,5 +185,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // Attacher l'écouteur d'événements au document
         document.addEventListener('keydown', moveElement);
     }
+
+    document.body.addEventListener('click', function (event) {
+        toggleDayNight(event);
+    });
 
 });
